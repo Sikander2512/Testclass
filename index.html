@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            background-color: rgb(226, 133, 37);
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+        }
+
+        .parent-second {
+            background-color: rgb(1, 105, 114);
+
+        }
+
+        .parent-third {
+            background-color: rgb(0, 64, 63);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius:5px ;
+        }
+
+        h1 {
+            color: hsl(0, 0%, 95%);
+            margin-top:30px ;
+
+        }
+        body{
+            background-color:  hsl(0, 0%, 95%);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 21px;
+            word-spacing: 2px;
+            font-size: 15px;
+        }
+
+        .learn {
+            color: rgb(226, 133, 37);
+            font-size: 14px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color:  hsl(0, 0%, 95%);
+        }
+
+        .paragraph {
+            font-size: 14px;
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 40px;
+            margin-bottom: 80px;
+
+        }
+
+        .learn-second {
+            font-size: 14px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            border: none;
+            color: rgb(1, 105, 114);
+            background-color:  hsl(0, 0%, 95%);
+        }
+
+        .learn-third {
+            font-size: 14px;
+            padding: 12px 20px;
+            border-radius: 20px;
+            border: none;
+            color: rgb(0, 64, 63);
+            background-color:  hsl(0, 0%, 95%);
+
+        }
+
+        .contanier {
+            display: flex;
+            margin-top: 95px;
+            align-items: center;
+            justify-content: center;
+            
+            
+
+
+        }
+
+        
+
+        .thumbnail {
+            padding-top: 40px;
+            padding-left: 30px;
+            padding-right: 70px;
+            padding-bottom: 40px;
+
+        }
+        @media(max-width:500px){
+            .contanier{
+                display: flex;
+                flex-direction: column;
+            }
+            .parent{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius:0px
+            }
+            .parent-third{
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius:5px ;
+                border-top-right-radius: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+
+        <div class="parent">
+            <div class="thumbnail">
+                <div class="pic">
+                    <img src="./pics/icon-luxury.svg" alt="" class="car">
+                </div>
+                <div class="heading">
+                    <h1>SEDANS</h1>
+                </div>
+
+                <div class="para">
+                    <p class="paragraph">
+                        Choose a sedon for its <br> affordabillity and excelent<br>
+                        fuel economy.Ideal for <br> cruising in the city
+                        or an <br> your nextroad trip.
+                    </p>
+                </div>
+                <div class="button">
+                    <button class="learn">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="parent-second">
+            <div class="thumbnail">
+                <div class="pic">
+                    <img src="./pics/icon-luxury.svg" alt="" class="car">
+                </div>
+                <div class="heading">
+                    <h1>SUVS</h1>
+                </div>
+                <div class="para">
+                    <p class="paragraph">
+                        Choose a sedon for its <br> affordabillity and excelent<br>
+                        fuel economy.Ideal for <br> cruising in the city
+                        or an <br> your nextroad trip.
+                    </p>
+                </div>
+                <div class="button">
+                    <button class="learn-second">Learn more</button>
+                </div>
+            </div>
+        </div>
+        <div class="parent-third">
+            <div class="thumbnail">
+                <div class="pic">
+                    <img src="./pics/icon-luxury.svg" alt="" class="car">
+                </div>
+                <div class="heading">
+                    <h1>LUXURY</h1>
+                </div>
+                <div class="para">
+                    <p class="paragraph">
+                        Choose a sedon for its <br> affordabillity and excelent<br>
+                        fuel economy.Ideal for <br> cruising in the city
+                        or an <br> your nextroad trip.
+                    </p>
+                </div>
+                <div class="button">
+                    <button class="learn-third">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
